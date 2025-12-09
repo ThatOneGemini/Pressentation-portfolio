@@ -110,11 +110,69 @@ nav ul li a :hover{
 
 
 
+/*start: footer styles*/
+
 footer {
-    display: flex;
-    justify-content: right;
-    padding: 5px;
-    background-color: #703D30;
-    color: beige;
+    background-color: #252525;
+    padding: 25px 0
 }
 
+footer small {
+    color: #ddd;
+    font-size: 0.9em;
+}
+
+footer ul a {
+    list-style-type: none;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+footer ul li a {
+    color: #ddd;
+    font-size: 0.8em;
+}
+
+/* start: media queries */
+/* start: 1200px*/
+
+@media (max-width: 1200px) {
+    .flex {
+        max-width: 1000px;}
+    }
+
+@media (max-width: 991px) {
+    .flex {
+        max-width: 720px;}
+    }
+
+    nav ul li {
+        margin: 0 12px;
+        font-size: 0.85em;
+    }
+
+    footer .flex {
+        flex-wrap: wrap-reverse;
+    }
+
+    footer small {
+        flex-basis: 100%;
+        font-size: 0.75em;
+        text-align: center;
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+
+    footer ul {
+        flex-basis: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    /* End: 991px */
+
+    /* Start: 767px*/
