@@ -1,0 +1,83 @@
+body{
+    margin: auto;
+    max-width: 1000px;
+    padding: 15px;
+    background-color: #0A1927;
+}
+
+.flex {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #0A1927;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid #EBA859;
+}
+
+.hamburger-menu {
+    background-color: transparent;
+    border: 1px solid #FFC784;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-menu .strip {
+    display: block;
+    height: 1px;
+    background-color: #FFC784;
+    margin: 4px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 15px ;
+    margin: 0 18px;
+}
+
+nav ul li a {
+    color: #FFFBE0;
+    font-weight: 600;
+}
+
+nav ul li a :hover{
+    color: #EBA859;
+}
+
+#contant-button {
+    background-color: #EBA859;
+    color: #0A1927;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.carousel {
+    margin: 80px;
+    display: flex;
+    gap: 15px;
+}
+
+.card {
+    flex: 0 0 320px;
+    height: 190px;
+    background-color: #337E86;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+}
