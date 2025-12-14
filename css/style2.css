@@ -1,9 +1,14 @@
 body{
-    margin: auto;
-    max-width: 1000px;
+    margin: 0;
+    max-width: none;
     padding: 15px;
     background-color: #0A1927;
 }
+
+main {
+    margin: 0 auto;
+    max-width: 1000px;
+} 
 
 @keyframes tonext {
     75% {
@@ -83,20 +88,18 @@ ol, li {
     position: relative;
     filter: drop-shadow(0 0 10px #0A1927);
     perspective: 100px;
-    max-width: 650px;
-    height: 450px;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
     margin: 15px auto;
 }
 
 .carousel__viewport {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     display: flex;
-    overflow-x: scroll;
-    counter-reset: item;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
 }
@@ -116,18 +119,22 @@ ol, li {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%, 70px);
+    transform: translate(-50%, -40%);
     color: #63522E;
     font-size: 2em;
 }
 
 .carousel__snapper {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
+    scroll-snap-align: center;
+}
+
+.carousel__slide img {
+    display: block;
     width: 100%;
     height: 100%;
-    scroll-snap-align: center;
+    object-fit: cover;
 }
 
 @media (hover: hover) {
@@ -143,7 +150,7 @@ ol, li {
     }
 }
 
-@media(prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
     .carousel__snapper {
         animation-name: none;
     }
@@ -167,8 +174,8 @@ ol, li {
 
 .carousel__navigation-button {
     display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
     background-color: #0A1927;
     background-clip: content-box;
     border: 0.25rem solid transparent;
@@ -177,41 +184,33 @@ ol, li {
     transition: transform 0.1s;
 }
 
-.carousel::before,
-.carousel::after,
-.carousel__prev,
-.carousel__next {
+.carousel::before,.carousel::after,.carousel__prev,.carousel__next {
     position: absolute;
-    top: 0;
-    margin-top: 37.5%;
-    width: 4rem;
-    height: 4rem;
+    top: 50%;
+    width: 3rem;
+    height: 3rem;
     transform: translateY(-50%);
     border-radius: 50%;
     font-size: 0;
     outline: 0;
 }
 
-.carousel::before,
-.carousel__prev {
-    left: -1rem;
+.carousel::before,.carousel__prev {
+    left: -0.5rem;
 }
 
-.carousel::after,
-.carousel__next {
-    right: -1rem;
+.carousel::after,.carousel__next {
+    right: -0.5rem;
 }
 
-.carousel::before,
-.carousel::after {
+.carousel::before,.carousel::after {
   content: '';
   z-index: 1;
   background-color: #333;
-  background-size: 1.5rem 1.5rem;
+  background-size: 1.25rem 1.25rem;
   background-repeat: no-repeat;
   background-position: center center;
   color: #fff;
-  font-size: 2.5rem;
   line-height: 4rem;
   text-align: center;
   pointer-events: none;
@@ -223,4 +222,38 @@ ol, li {
 
 .carousel::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+@media (min-width: 600px) {
+    
+  .carousel::before, .carousel::after, .carousel__prev, .carousel__next {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .carousel::before, .carousel::after {
+    background-size: 1.5rem 1.5rem;
+    line-height: 3.5rem;
+  }
+  .carousel__navigation-button {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+
+@media (min-width: 900px) {
+  /* let the main container cap width on desktop while carousel still fluid */
+  main { max-width: 1000px; }
+  .carousel::before, .carousel::after, .carousel__prev, .carousel__next {
+    width: 4rem;
+    height: 4rem;
+  }
+  .carousel::before, .carousel::after {
+    background-size: 1.75rem 1.75rem;
+    line-height: 4rem;
+  }
+  .carousel__navigation-button {
+       width: 1.75rem;
+       height: 1.75rem;
+  }
 }
