@@ -19,13 +19,11 @@
     <!-- End: head and title of the website -->
 
     <!-- Start: body (with the header + nav, with logos and hamburger menu) -->
-
-
     <body>
         <header>
             <div class="flex">
                 <div class="logo">
-                    <a href="index.html"><img src="./images/logo new 2.png" alt="my-logo" width="80" height="50"/></a>
+                    <a href="index.html"><img src="./images/new-logo-2.png" alt="my-logo" width="80" height="50"/></a>
                 </div>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
@@ -36,10 +34,9 @@
                     <ul id="nav-menu-container">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about-me.html">About me</a></li>
-                        <li><a href="#">Projects</a></li>
+                        <li><a href="projects.html">Projects</a></li>
                     </ul>
                 </nav>
-                <a href="#" id="contant-button">Contant me</a>
             </div>
         </header>
     <!-- End: of the  body -->
@@ -47,39 +44,124 @@
 
     <!-- Start: on the main which it consinst in multiple coding like sections, headings, links of the projects, pictures, information of the user (me) -->
         <main>
-            <section id="box-1">
+            <section id="intro">
                 <div class="introduction-text">
-                    <h1>Hey, I'm Sif E. G. Jensen!</h1>
-                    <h4> iodaaohfobadiufa ihe siudfdsf adshfuvds vfidf dsihfpiewl fbefhid fiadns fdufbds fdouvyf sdisid fs dfi sdugfisidfis dif a fiuf idsdu fu duas df9 dfu odsf ew9fdPUGSDI FSAUYGDF FUHDSI hgfdih sihdfnad fiagsfhdnsbf afdf dhajIvUHI ii isG IhpiSLAb ihdsfi</h4>
-                    <button>Read More</button>
+                    <img class="img-1" src="./images/pfp.jpg" alt="me-picture">
+                    <h1>Hey, I'm Sif Jensen!</h1>
+                    <h4>I am a newly minted Multimedia Designer with a passion for bringing characters and concepts to life. My goal is to bridge the gap between imagination and reality, whether through designing unique VTuber identities or producing high-energy animated advertisements. I am enthusiastic about applying my skills in video and sound editing to collaborative projects, ensuring every frame and frequency is polished to perfection for my "streaming" clients! </h4>
+                    <button>Learn more</button>
                 </div>
             </section>
 
-            <section id="carousel">
-                    <h1>My Projects</h1>
-                    <h4> iodaaohfobadiufa ihe siudfdsf adshfuvds vfidf dsihfpiewl fbefhid fiadns fdufbds fdouvyf sdisid fs dfi sdugfisidfis dif a fiuf idsdu fu duas df9 dfu odsf ew9fdPUGSDI FSAUYGDF FUHDSI hgfdih sihdfnad fiagsfhdnsbf afdf dhajIvUHI ii isG IhpiSLAb ihdsfi</h4>
-                <div>
-                    <div class="card"> <h3>Card 1</h3></div>
-                    <div class="card"> <h3>Card 2</h3></div>
-                    <div class="card"> <h3>Card 3</h3></div>
-                    <div class="card"> <h3>Card 4</h3></div>
-                    <div class="card"> <h3>Card 5</h3></div>
-                    <div class="card"> <h3>Card 5</h3></div>
+                <div class="projects">
+                    <div class="projects-text">
+                        <h2> My projects</h2>
+                        <h4> If you are curious on seeing my practices, consider on checking out the carousel out!</h4>
+                    </div>
                 </div>
-            </section>
 
-             <section id="box-3">
+                <section class="carousel" aria-label="Gallery">
+                    <ol class="carousel__viewport">
+                        <li id="carousel__slide1"
+                            tabindex="0"
+                            class="carousel__slide">
+
+                            <img src="./images/Carousel__slide1.png" alt="moving-art-project">
+
+                            <div class="carousel__snapper">
+                                <a href="#carousel__slide4"
+                                class="carousel__prev"> Go to last slide</a>
+                                <a href="#carousel__slide2"
+                                class="carousel__next"> Go to next slide</a>
+                            </div>
+                        </li>
+
+                        <li id="carousel__slide2"
+                            tabindex="0"
+                            class="carousel__slide">
+
+                            <img src="./images/Carousel__slide2.gif" alt="pixel-gif">
+
+                            <div class="carousel__snapper">
+                                <a href="#carousel__slide1"
+                                class="carousel__prev"> Go to previous slide</a>
+                                <a href="#carousel__slide3"
+                                class="carousel__next"> Go to next slide</a>
+                            </div>
+                        </li>
+
+                        <li id="carousel__slide3"
+                            tabindex="0"
+                            class="carousel__slide">
+
+                            <img src="./images/Carousel__slide3.png" alt="character-design-image">
+                            
+                            <div class="carousel__snapper">
+                                    <a href="#carousel__slide2"
+                                    class="carousel__prev"> Go to previous slide</a>
+                                    <a href="#carousel__slide4"
+                                    class="carousel__next"> Go to next slide</a>
+                            </div>
+                        </li>
+
+                        <li id="carousel__slide4"
+                            tabindex="0"
+                            class="carousel__slide">
+                            
+                            <img src="./images/Carousel__slide4.jpg" alt="video-editing-image">
+                            
+                            <div class="carousel__snapper">
+                                    <a href="#carousel__slide3"
+                                    class="carousel__prev"> Go to previous slide</a>
+                                    <a href="#carousel__slide1"
+                                    class="carousel__next"> Go to next slide</a>
+                            </div>
+                        </li>
+                    </ol>
+
+                    <aside class="carousel__navigation">
+                        <ol class="carousel__navigation-list">
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide1"
+                                class="carousel__navigation-button"> Go to slide 1</a>
+                            </li>
+
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide2"
+                                class="carousel__navigation-button"> Go to slide 2</a>
+                            </li>
+
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide3"
+                                class="carousel__navigation-button"> Go to slide 3</a>
+                            </li>
+
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide4"
+                                class="carousel__navigation-button"> Go to slide 4</a>
+                            </li>
+                        </ol>
+                        </div>
+                    </aside>
+                </section>
+
+            <section id="activities">
                 <div class="what-i-usually-do-text">
+                    <img class="img-2" src="./images/pfp-2.jpg" alt="me-picture-2">
                     <h1>What I usually do...</h1>
-                    <h4> iodaaohfobadiufa ihe siudfdsf adshfuvds vfidf dsihfpiewl fbefhid fiadns fdufbds fdouvyf sdisid fs dfi sdugfisidfis dif a fiuf idsdu fu duas df9 dfu odsf ew9fdPUGSDI FSAUYGDF FUHDSI hgfdih sihdfnad fiagsfhdnsbf afdf dhajIvUHI ii isG IhpiSLAb ihdsfi</h4>
+                    <h4>Before committing to my education, I usually did commissions for friends and fans on my social networks in my free time. I always loved making funny clips of my recorded gaming videos, and I was also commissioned to do character designs, photo editing, and voice editing.
+                        <br>
+                        <br>
+                        Now, while studying in this education, I been learning more editing methods while being trained to make UI and UX design process, advanced video and voice editing, more insight on making moving artwork (both in photoshop/after effects and in Live2D) and so much more!
+                    </h4>
                 </div>
             </section>
 
-            <section id="box-4">
-                <div class="contant-via-email">
+            <section id="contact">
+                <div class="contant-via-email-text">
                     <h1>Let's get in touch!</h1>
-                    <h4> iodaaohfobadiufa ihe siudfdsf adshfuvds vfidf dsihfpiewl fbefhid hgfdih sihdfnad fiagsfhdnsbf afdf dhajIvUHI ii isG IhpiSLAb ihdsfi</h4>
-                    <button>Contant Me</button>
+                    <h4> If you are interested on knowing more about me, feel free to send me an email so we can catch up!</h4>
+                    <button>Contant Me <a href="contact.html"></a></button>
                 </div>
             </section>
         </main>
@@ -87,20 +169,19 @@
 
         <footer>
             <div class="flex">
-                <div class="logo-2"> <img src="./images/logo new 3.png" alt="my-logo" width="70" height="40"/></div>
-            <p>Sif Estrella Grønvald Jensen</p>
+                <div class="logo-2"> <img src="./images/new-logo.png" alt="my-logo" width="70" height="40"/></div>
             <a href="sifegjensen@gmail.com">sifegjensen@gmail.com</a>
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/thatonegeminidk/?hl=en"> <img src="./images/Instagram_logo_2022.svg.png" alt="instagram"></a>
+                        <a href="https://www.instagram.com/thatonegeminidk/?hl=en"> <img src="./images/Instagram_logo_2022.svg.png" alt="instagram" width="50" height="50"></a>
                     </li>
 
                     <li>
-                        <a href="https://x.com/ThatOneGemini21"> <img src="./images/x-twitter-logo-on-black-circle-5694247.png" alt="twitter/X"></a>
+                        <a href="https://x.com/ThatOneGemini21"> <img src="./images/x-twitter-logo-on-black-circle-5694247.png" alt="twitter/X" width="50" height="50"></a>
                     </li>
 
                     <li>
-                        <a href="https://www.facebook.com/sonicexesif.nigthmare/"> <img src="./images/Facebook_Logo_(2019).png" alt="facebook"></a>
+                        <a href="https://www.facebook.com/sonicexesif.nigthmare/"> <img src="./images/Facebook_Logo_(2019).png" alt="facebook" width="50" height="50"></a>
                     </li>
                 </ul>
             </div>

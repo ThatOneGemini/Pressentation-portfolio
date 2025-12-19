@@ -1,6 +1,6 @@
 body{
-    font-family: 'Pridi';
     margin: 0;
+    background-color: #FFFBE0;
 }
 
 /* start: global style rules */
@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;    
+    font-size: 2em;
 }
 
 h3 {
@@ -54,15 +54,15 @@ p, label, strong {
 /* start: header styles */
 
 header {
-    background-color: #131313;
+    background-color: #0A1927;
     padding: 20px 0;
     position: relative;
-    border-bottom: 1px solid #FFB320;
+    border-bottom: 1px solid #EBA859;
 }
 
 .hamburger-menu {
     background-color: transparent;
-    border: 1px solid #FFB320;
+    border: 1px solid #EBA859;
     padding: 3px 5px;
     width: 30px;
     cursor: pointer;
@@ -72,7 +72,7 @@ header {
 .hamburger-menu .strip {
     display: block;
     height: 1px;
-    background-color: #FFB320;
+    background-color: #EBA859;
     margin: 4px 0;
 }
 
@@ -84,55 +84,488 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    font-size: 1em ;
+    font-size: 15px ;
     margin: 0 18px;
 }
 
 nav ul li a {
-    color: #eee;
+    color: #FFFBE0;
     font-weight: 600;
 }
 
-nav ul li a :hover{
+nav ul li a:hover{
     color: #FFB320;
 }
 
 #contant-button {
-    background-color: #FFB320;
-    color: #131313;
-    border-radius: 20px;
-    padding: 10px 15px;
+    background-color: #1D4B50;
+    color: #FFFBE0;
+    border-radius: 30px;
+    padding: 22px 15px;
     font-size: 0.85em;
     font-weight: 600;
 }
 
+#contant-button:hover {
+    background-color: #337E86;
+    color: #FFB320;
+    transition: 0.4s;
+}
 /*end: header styles*/
 
-/*Start: Carousel programing*/
+/*Start: Intro style*/
+
+#intro {
+    width: 100%;
+    height: 395px;
+    background-color: none;
+    margin: 60px 250px;
+}
+
+
+.img-1 {
+    float: right;
+    width: 300px;
+    height: 350px;
+    border-radius: 25px;
+}
+
+.introduction-text {
+    max-width: 1200px;
+    margin: -30px auto 0;
+    top: 40%;
+    left: 0;
+    right: 0;
+    padding: 2%
+}
+
+.introduction-text h1 {
+    font-family: "Milonga";
+    font-size: 55px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.introduction-text h4 {
+    font-family: "Pridi";
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.introduction-text button{
+    font-family: "Pridi";
+    background-color: #EBA859;
+    color: #0A1927;
+    border-radius: 30px;
+    padding: 15px 25px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.introduction-text button:hover {
+    background-color: #FFB320;
+    transition: 0.4s;
+}
+/*End: Intro style*/
+
+/*Start: Project text and style*/
+
+.projects {
+    background-color: #0A1927;
+    width: 100%;
+    height: 250px;
+    margin: 60px 250px;
+    border-radius: 30px;
+    padding: 2%
+}
+
+.projects-text {
+    width: 100%;
+    margin: 0 250px;
+    top: 40%;
+    left: 0;
+    right: 0;
+}
+
+.projects-text h2 {
+    font-family: "Milonga";
+    color: #FFFBE0;
+    font-size: 45px;
+    font-weight: 300;
+    margin: 10px 0;
+    position: center;
+}
+
+.projects-text h4 {
+    font-family: "Pridi";
+    color: #FFFBE0;
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+/*End: Project text and style*/
+
+/*Start: activities/what I usually do style*/
+
+#activities {
+    width: 100%;
+    height: 550px;
+    background-color: #0A1927;
+    border-radius: 30px;
+    margin: 60px 250px;
+}
+
+.img-2 {
+    float: right;
+    width: 400px;
+    height: 450px;
+    margin-top: 2%;
+    margin-right: 2%;
+    border-radius: 25px;
+}
+
+.what-i-usually-do-text {
+    max-width: 1200px;
+    color: #FFFBE0;
+    margin: 1%;
+    top: 40%;
+    left: 0;
+    right: 0;
+    padding: 2%
+}
+
+.what-i-usually-do-text h1 {
+    font-family: "Milonga";
+    font-size: 55px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.what-i-usually-do-text h4 {
+    font-family: "Pridi";
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+/*End: activities/what I usually do style*/
+
+/*Start: contact me style*/
+
+#contact {
+    width: 100%;
+    height: 395px;
+    background-color: none;
+    margin: 80px 250px;
+    padding: 5%;
+}
+
+.contant-via-email-text {
+    max-width: 1200px;
+    margin: -30px;
+    top: 40%;
+    left: 0;
+    right: 0;
+    padding: 5%
+}
+
+.contant-via-email-text h1 {
+    font-family: "Milonga";
+    font-size: 55px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.contant-via-email-text h4 {
+    font-family: "Pridi";
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.contant-via-email-text button{
+    font-family: "Pridi";
+    background-color: #63522E;
+    color: #FFFBE0;
+    border-radius: 30px;
+    padding: 15px 25px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.contant-via-email-text button:hover {
+    background-color: #846e40;
+    transition: 0.4s;
+}
+/*End: contact me style*/
+
+/*Start: carousel style*/
+@keyframes tonext {
+    75% {
+        left: 0;
+    }
+    95% {
+        left: 100%;
+    }
+    98%{
+        left: 100%;
+    }
+    99% {
+        left: 0;
+    }
+}
+
+@keyframes tostart {
+    75% {
+        left: 0;
+    }
+    95% {
+        left: -300%;
+    }
+    98%{
+        left: -300%;
+    }
+    99% {
+        left: 0;
+    }
+}
+
+@keyframes snap {
+    96% {
+        scroll-snap-align: center;
+    }
+    97% { 
+        scroll-snap-align: none;
+    }
+    99% {
+        scroll-snap-align: none;
+    }
+    100% {
+        scroll-snap-align: center;
+    }
+}
+
+.cd__main{
+    display: block !important;
+}
+
+* {
+    box-sizing: border-box;
+    scrollbar-color: #1D4B50 #FFFBE0;
+    scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: none;
+}
+
+* {
+    -ms-overflow-style: none;
+}
+
+ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 .carousel {
-    margin: 80px;
+    position: center;
+    filter: drop-shadow(0 0 10px #0A1927);
+    perspective: 100px;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 2 / 3;
+    height: 700px;
+    margin: 0 250px;
+}
+
+.carousel__viewport {
+    position: absolute;
+    inset: 0;
     display: flex;
-    gap: 15px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
-.card {
-    flex: 0 0 320px;
-    height: 190px;
+.carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
     background-color: #0A1927;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    align-content: center;
 }
 
+.carousel__slide:nth-child(even) {
+    background-color: #0A1927;
+}
+
+.carousel__slide::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    color: #63522E;
+    font-size: 2em;
+}
+
+.carousel__snapper {
+    position: absolute;
+    inset: 0;
+    scroll-snap-align: center;
+}
+
+.carousel__slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (hover: hover) {
+    .carousel__snapper {
+        animation-name: tonext, snap;
+        animation-timing-function: ease;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    .carousel__slide:last-child .carousel__snapper {
+        animation-name: tostart, snap;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .carousel__snapper {
+        animation-name: none;
+    }
+}
+
+.carousel:hover .carousel__snapper, .carousel:focus-within .carousel__snapper {
+    animation-name: none;
+}
+
+.carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.carousel__navigation-list, .carousel__navigation-item {
+    display: inline-block;
+}
+
+.carousel__navigation-button {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #0A1927;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+}
+
+.carousel::before,.carousel::after,.carousel__prev,.carousel__next {
+    position: absolute;
+    top: 50%;
+    width: 3rem;
+    height: 3rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+}
+
+.carousel::before,.carousel__prev {
+    left: -0.5rem;
+}
+
+.carousel::after,.carousel__next {
+    right: -0.5rem;
+}
+
+.carousel::before,.carousel::after {
+  content: '';
+  z-index: 1;
+  background-color: #1D4B50;
+  background-size: 1.25rem 1.25rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #FFFBE0;;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+@media (min-width: 600px) {
+    
+  .carousel::before, .carousel::after, .carousel__prev, .carousel__next {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .carousel::before, .carousel::after {
+    background-size: 1.5rem 1.5rem;
+    line-height: 3.5rem;
+  }
+  .carousel__navigation-button {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+
+@media (min-width: 900px) {
+  /* let the main container cap width on desktop while carousel still fluid */
+  main { max-width: 1000px; }
+  .carousel::before, .carousel::after, .carousel__prev, .carousel__next {
+    width: 4rem;
+    height: 4rem;
+  }
+  .carousel::before, .carousel::after {
+    background-size: 1.75rem 1.75rem;
+    line-height: 4rem;
+  }
+  .carousel__navigation-button {
+       width: 1.75rem;
+       height: 1.75rem;
+  }
+}
 /*End: Carousel programing*/
 
 /*start: footer styles*/
 
 footer {
-    background-color: #252525;
-    padding: 25px 0
+    background-color: #0A1927;
+    padding: 20px 0
 }
 
 footer small {
@@ -142,6 +575,8 @@ footer small {
 
 footer ul a {
     list-style-type: none;
+    font-family: "Pridi";
+    color: #EBA859;
     margin: 0;
 }
 
@@ -151,13 +586,14 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #ddd;
+    font-family: "Pridi";
+    color: #FFFBE0;
     font-size: 0.8em;
 }
 
+
 /* start: media queries */
 /* start: 1200px*/
-
 @media (max-width: 1200px) {
     .flex {
         max-width: 1000px;}
@@ -194,3 +630,55 @@ footer ul li a {
     /* End: 991px */
 
     /* Start: 767px*/
+    @media (max-width: 767px) {
+    h4 {
+        font-size: 1.2em;
+    }
+
+    .flex {
+        max-width: 540px;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 101%;
+        width: 100%;
+        background-color: #131313;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 15px 0 15px 20px;
+        border-bottom: 1px solid #FFB320;
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-top: 2px;
+    }
+
+    .introduction-text {
+        margin-top: -85px;
+    }
+
+    .introduction-text h1 {
+        font-size: 2.5em;
+    }
+}
+
+    @media (max-width: 400px) {
+    .logo img {
+        width: 150px;
+        margin-top: 2px;
+    }
+}
